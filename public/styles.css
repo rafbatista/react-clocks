@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-size: 10px;
+}
+
+.times {
+  height: 100vh;
+  width: 100vw;
+}
+
+.time-container {
+  float: left;
+  position: relative;
+  width: calc(99vw / 3);
+  height: calc(99vh / 3);
+  background-color: black;
+}
+
+.zone-time {
+  position: absolute;
+  width: 14.7vw;
+  font-size: 33px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: 'Fascinate Inline', cursive;
+  color: lightblue;
+  text-shadow: 11px 7px 19px green;
+  text-align: center;
+}
