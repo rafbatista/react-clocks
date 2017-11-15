@@ -1,0 +1,61 @@
+{
+  "name": "react-clocks",
+  "version": "1.0.0",
+  "description": "Refactoring my original clocks Repo with React components",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify public/main.js -t babelify -o public/bundle.js",
+    "bundle:watch":
+      "watchify public/main.js -vd -t babelify -o public/bundle.js",
+    "lint": "run-p lint:*",
+    "lint:html": "htmlhint ./**/*.html",
+    "lint:css": "stylelint ./**/*.css",
+    "lint:js": "eslint ./**/*.js",
+    "test": "echo \"Error: no test specified\" && exit",
+    "precommit": "npm test",
+    "start": "node index.js",
+    "seed": "node seed.js",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafbatista/react-clocks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafbatista/react-clocks/issues"
+  },
+  "homepage": "https://github.com/rafbatista/react-clocks#readme",
+  "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babelify": "8.0.0",
+    "browserify": "14.5.0",
+    "express": "^4.16.2",
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.13",
+    "mongodb": "^2.2.33",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "watchify": "3.9.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "eslint": "4.5.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-react": "7.3.0",
+    "eslint-plugin-standard": "3.0.1",
+    "htmlhint": "0.9.13",
+    "husky": "0.14.3",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "4.1.1",
+    "stylelint": "8.0.0",
+    "stylelint-config-standard": "17.0.0",
+    "watchify": "^3.9.0"
+  }
+}
